@@ -10,6 +10,7 @@ export default class App extends Component {
       Data: {}
     }
   } 
+  
   fetchData = async()=>{
     let data = await fetch('https://api.coingecko.com/api/v3/coins/bitcoin'+ this.state.Id)
     let JsonData = await data.json()
